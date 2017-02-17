@@ -1,0 +1,121 @@
+﻿/*!
+ * Version: 1.0.0
+ * Author: Patrick Wynne
+ * Author URL: http://adventure-us.guide/author/patrick/
+ * Email: pwynne@myameriflex.com
+ * Github: https://github.com/PatrickWynne/PopNPull
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+.popInBack {
+    animation: popIn 1s ease;
+    -webkit-animation: popInBack 1s ease;
+}
+@keyframes popInBack {
+    from{transform:scale(0)}
+    50%{transform:scale(1.1)}
+    to{transform:scale(1)}
+}
+
+.popInLeft {
+    animation: popInLeft 1s ease;
+    -webkit-animation: popInLeft 1s ease;
+}
+@keyframes popInLeft {
+    from{transform:scale(0)}
+    0% { left: -1100px; }
+    50%{transform:scale(1.1)}
+    to{transform:scale(1)}
+    100% { left: 0px; }
+}
+.popInRight {
+    animation: popInRight 1s ease;
+    -webkit-animation: popInRight 1s ease;
+}
+@keyframes popInRight {
+    from{transform:scale(0)}
+    0% { right: -1100px; }
+    50%{transform:scale(1.2)}
+    to{transform:scale(1)}
+    100% { right: 0px; }
+}
+.popInTop {
+    animation: popInTop 1s ease;
+    -webkit-animation: popInTop 1s ease;
+}
+@keyframes popInTop {
+    from{transform:scale(0)}
+    0% { top: -1100px; }
+    50%{transform:scale(1.2)}
+    to{transform:scale(1)}
+    100% { top: 0px; }
+}
+.popInBottom {
+    animation: popInBottom 1s ease;
+    -webkit-animation: popInBottom 1s ease;
+}
+@keyframes popInBottom {
+    from{transform:scale(0)}
+    0% { bottom: -1100px; }
+    50%{transform:scale(1.2)}
+    to{transform:scale(1)}
+    100% { bottom: 0px; }
+}
+.pullBack {
+    animation: pullBack 1s ease-in;
+    -webkit-animation: pullBack 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pullBack {
+    from{transform:scale(1)}
+    to{transform:scale(0)}
+    100% {
+        display: none;
+        transform:scale(0);
+    }
+}
+.pullDown {
+    animation: pullDown 1s ease-in;
+    -webkit-animation: pullDown 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pullDown {
+    from{transform:scale(1)}
+    0% { bottom: 0px; }
+    to{transform:scale(0)}
+    100% {
+        display: none;
+        transform:scale(0);
+    }
+    100% { bottom: -1100px; }
+}
+.pullLeft {
+    animation: pullLeft 1s ease-in;
+    -webkit-animation: pullLeft 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pullLeft {
+    from{transform:scale(1)}
+    0% { left: 0px; }
+    to{transform:scale(0)}
+    100% {
+        display: none;
+        transform:scale(0);
+    }
+    100% { left: -1100px; }
+}
+.pullRight {
+    animation: pullRight 1s ease-in;
+    -webkit-animation: pullRight 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pullRight {
+    from{transform:scale(1)}
+    0% { right: 0px; }
+    to{transform:scale(0)}
+    100% {
+        display: none;
+        transform:scale(0);
+    }
+    100% { right: -1100px; }
+}
